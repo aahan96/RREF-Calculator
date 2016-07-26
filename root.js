@@ -39,6 +39,7 @@ $('#button1').click(function(){
   newButton.appendTo("#next_bttn");
 
   $('#button2').click(function(){
+		$('#steps_div').hide();
 	  $('#Calculate').remove();
 	  var Matrix = new Array(x);
 	  for(var i=0; i<x; i++){
@@ -84,9 +85,19 @@ $('#button1').click(function(){
     newButton1.after().html('Reset');
     newButton1.appendTo("#next_bttn");
     
+		var steps_shown = 0;
     $('#button4').click(function(){
-	   var getOl = $(document.getElementById('#steps_ol'));
-	   getOl.appendTo("#steps_div");	
+			if(steps_shown == 0) {
+				$('#steps_div').show();
+				$(newButton2).html('Hide Steps');
+				steps_shown = 1;
+			}
+			
+			else if(steps_shown == 1) {
+				$('#steps_div').hide();
+				$(newButton2).html('Show Steps');
+				steps_shown = 0;
+			}			
     });
     
    
@@ -102,7 +113,7 @@ $('#button1').click(function(){
 		$('#result').remove();
 		$('.br_class').remove();
 		$('#button4').remove();
-		$('#steps_ol').remove();
+		$('#steps_div').empty();
 	});
 
   });
@@ -113,7 +124,7 @@ var showRes = function(res){
 	var newStep = $(document.createElement('li'))
 		.attr("id", 'steps_li');
 	newStep.after().html(res);
-	newStep.appendTo("#steps_ol");
+	newStep.appendTo("#steps_div");
 
 }
 
