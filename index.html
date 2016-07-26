@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="root.js" defer>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <title>RREF calculator</title>
+  </head>
+  <body style="background-color: black; color: white;">
+	
+    <div class="container-fluid">
+	    <div class="alert alert-warning alert-dismissible" role="alert">
+  Chrome users might experience some trouble viewing the website. Try loading the unsafe scripts. To know more, click <a href="https://support.google.com/chrome/answer/1342714?hl=en" target="_blank" id="info_link">here</a>
+  
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+</div>
+    </div>
+    <div class="container">
+	   
+      <div class="jumbotron" style="color: black;">
+        <h1>RREF Calculator</h1>
+      </div>
+      <div class="row" id="inp_row">
+        <div class = "col-md-2">
+        </div>
+        <div class = "col-md-4" style>
+          <label for="sel1">Select no. of rows:</label>
+          <select class="form-control" id="sel_rows">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+          </select>
+        </div>
+        <div class = "col-md-4" style>
+          <label for="sel1">Select no. of columns:</label>
+          <select class="form-control" id="sel_cols">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+          </select>
+        </div>
+        <div class = "col-md-2">
+        </div>
+      </div>
+      <br><br>
+      <div id="continue_bttn">
+        <button type="button" class="btn btn-default" id="button1">Continue</button>
+      </div>
+      <div id="result_div">
+      </div>
+      
+      <div id='TextBoxesGroup' class="block" class="inp_div">
+      </div>
+      <div id="next_bttn">
+        <br>
+      </div>
+      <br>
+      <div id="steps_div">
+      
+      </div>
+      <div id="footer">
+			<p>Website Created and Maintained by <b><em><a id="me" href="https://github.com/aahan96" target="_blank">Aahan Sawhney</a></em></b> &copy; 2015  </p>
+		</div>
+    </div>
+    
+  </body>
+</html>

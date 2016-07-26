@@ -1,0 +1,80 @@
+.btn {
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: 1px, solid, white;
+}
+
+.btn: focus{
+  background-color: white;
+  color: black;
+  border: 1px, solid, black;
+}
+
+.inp{
+  width: 40px;
+  height: 30px;
+  margin: 5px;
+  font-size: 12px;
+  color: black;
+  padding: 0px;
+  text-align: center;
+}
+
+#continue_bttn {
+  text-align: center;
+}
+
+#next_bttn {
+  text-align: center;
+}
+
+.inp_div {
+  display: inline;
+}
+
+
+.block {
+  display: block;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+
+#footer {
+	width: 100%;
+	clear: both;
+	position: relative;
+	text-align: center;
+	font-size: large;
+	bottom: -10vh;
+	font-weight: 900;
+	background: grey; 
+	padding: .5%;
+	opacity: .85;
+	color: white;
+}
+
+#me {
+	color: black;
+	text-decoration: none;
+}
+
+#me:visited {
+	text-decoration: none;
+}
+
+#me:hover {
+	color: aqua;
+	text-decoration: none;
+}
+
+
+#info_link :hover {
+	text-decoration: underline;
+}
+#info_link :visited {
+	text-decoration: none;
+}
+
+
